@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "skycore",
+  "version": "${version}",
+  "name": "Sky Core",
+  "description": "This library is used for my personal use.",
+  "authors": [
+    "JustinPlayzz, TerraformMC"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/skycore/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.justinplayzz.SkyCore"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "skycore.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*"
+  }
+}
