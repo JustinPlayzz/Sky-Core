@@ -1,5 +1,6 @@
 package com.github.justinplayzz;
 
+import com.github.justinplayzz.init.BayouBlues.util.TerrestriaConfigManager;
 import net.fabricmc.api.ModInitializer;
 
 import org.apache.logging.log4j.Level;
@@ -12,11 +13,16 @@ public class SkyCore implements ModInitializer {
 
     public static final String MOD_ID = "skycore";
     public static final String MOD_NAME = "Sky Core";
+    private static final TerrestriaConfigManager CONFIG_MANAGER = new TerrestriaConfigManager();
 
     @Override
     public void onInitialize() {
         log(Level.INFO, "Initializing");
         //TODO: Initializer
+    }
+
+    public static TerrestriaConfigManager getConfigManager() {
+        return CONFIG_MANAGER;
     }
 
     public static void log(Level level, String message){
